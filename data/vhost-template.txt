@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+
+         ServerName %s
+         DocumentRoot %dr
+
+         <Directory />
+             Options Indexes FollowSymLinks Includes ExecCGI
+             AllowOverride All
+             Require all granted
+             Allow from all
+        </Directory>
+
+</VirtualHost>
