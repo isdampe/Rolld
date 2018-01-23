@@ -13,9 +13,9 @@ unzip wordpress-seo.zip
 wget https://downloads.wordpress.org/plugin/wp-super-cache.zip
 unzip wp-super-cache.zip
 rm *.zip
-cp /home/dampe/acf/acf-gallery ./ -R
-cp /home/dampe/acf/acf-repeater ./ -R
-cp /home/dampe/acf/acf-options-page ./ -R
+cp ~/acf/acf-gallery ./ -R
+cp ~/acf/acf-repeater ./ -R
+cp ~/acf/acf-options-page ./ -R
 cd ../themes
 rm twenty* -R
 mkdir rename_me
@@ -25,4 +25,6 @@ mkdir lib
 cd ../../../
 rm readme.html
 sudo chown www-data ./ -R
-sudo chmod 777 ./ -R
+cd wp-content/themes
+sudo chown dampe:dampe rename_me -R
+cd ../../
