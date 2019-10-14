@@ -3,7 +3,7 @@
          ServerName %s
          DocumentRoot %dr
 
-         <Directory />
+         <Directory %dr/>
              Options Indexes FollowSymLinks Includes ExecCGI
              AllowOverride All
              Require all granted
